@@ -25,7 +25,7 @@ class TestControllerTest {
     protected MockMvc mockMvc;
 
     @Autowired
-    private WebApplicationContext context;
+    private WebApplicationContext context;  // Spring 애플리케이션의 중앙 설정 및 의존성 주입 컨테이너 역할
 
     @Autowired
     private MemberRepository memberRepository;
