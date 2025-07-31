@@ -1,4 +1,4 @@
-package me.shinsunyoung.springbootdeveloper;
+package me.shinsunyoung.springbootdeveloper.practice;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

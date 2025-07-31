@@ -1,6 +1,7 @@
-package me.shinsunyoung.springbootdeveloper;
+package me.shinsunyoung.testpractice.springbootdeveloper;
 
-import org.aspectj.lang.annotation.After;
+import me.shinsunyoung.springbootdeveloper.practice.Member;
+import me.shinsunyoung.springbootdeveloper.practice.MemberRepository;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

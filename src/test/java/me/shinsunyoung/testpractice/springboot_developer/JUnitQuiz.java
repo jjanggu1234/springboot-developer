@@ -1,4 +1,4 @@
-package me.shinsunyoung.springboot_developer;
+package me.shinsunyoung.testpractice.springboot_developer;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import org.junit.jupiter.api.Test;

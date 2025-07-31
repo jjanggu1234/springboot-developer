@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+</head>
+<body>
+<h1>타임리프 익히기</h1>
+
+<!-- LocalDate를 yyyy-MM-dd 포맷으로 변경 -->
+<p th:text="${#temporals.format(today, 'yyyy-MM-dd')}"></p>
+
+<div th:object="${person}">
+    <p th:text="|이름 : *{name}|"></p>
+    <p th:text="|나이 : *{age}|"></p>
+    <p>취미</p>
+    <ul th:each="hobby : *{hobbies}">
+        <li>
+            <span th:text="${hobby}"></span>
+            <span th:if="${hobby == '운동'}">(대표 취미)</span>
+        </li>
+    </ul>
+</div>
+
+<!-- 만약 person 밖에 두고 싶다면 아래처럼 -->
+<a th:href="@{/api/articles/{id}(id=${person.id})}">글 보기</a>
+</body>
+</html>

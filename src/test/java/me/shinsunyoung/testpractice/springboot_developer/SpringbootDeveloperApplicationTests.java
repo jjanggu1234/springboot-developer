@@ -1,4 +1,4 @@
-package me.shinsunyoung.springboot_developer;
+package me.shinsunyoung.testpractice.springboot_developer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

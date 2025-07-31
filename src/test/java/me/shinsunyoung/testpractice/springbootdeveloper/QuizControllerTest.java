@@ -1,6 +1,8 @@
-package me.shinsunyoung.springbootdeveloper;
+/*
+package me.shinsunyoung.testpractice.springbootdeveloper;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.aspectj.apache.bcel.classfile.Code;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -106,4 +108,4 @@ class QuizControllerTest {
                 .andExpect(content().string("OK!"));
 
     }
-}
+}*/

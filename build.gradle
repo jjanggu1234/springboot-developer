@@ -20,13 +20,14 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     runtimeOnly 'com.h2database:h2'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-
-    testImplementation 'org.assertj:assertj-core:3.24.2'    //테스트 코드 AssertJ 라이브러리 의존성
+    
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher' //테스트 junit
+    testImplementation 'org.assertj:assertj-core:3.24.2'    //테스트 AssertJ
 }
 
 tasks.named('test') {
