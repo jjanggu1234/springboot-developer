@@ -1,21 +1,24 @@
 package me.shinsunyoung.springbootdeveloper.dto;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import me.shinsunyoung.springbootdeveloper.domain.Article;
 
 import java.time.LocalDateTime;
 
+@NoArgsConstructor
 @Getter
-public class ArticleListViewResponse {
+public class ArticleViewResponse {
+    private Long id;
+    private String title;
+    private String content;
+    private LocalDateTime createdAt;
 
-    private final Long id;
-    private final String title;
-    private final String content;
-
-    public ArticleListViewResponse (Article article) {
+    public ArticleViewResponse (Article article) {
         this.id = article.getId();
         this.title = article.getTitle();
         this.content = article.getContent();
+        this.createdAt = article.getCreatedAt();
     }
 
 }
