@@ -13,6 +13,7 @@
 </div>
 
 <div class="container">
+    <button type="button" id="create-btn" th:onclick="|location.href='@{/new-article}'|" class="btn btn-secondary btn-sm mb-3">글 등록</button>
     <div class="row" th:each="item : ${articles}">
         <div class="col-md-6 mb-4">
             <div class="card h-100">
@@ -23,10 +24,14 @@
                     <a th:href="@{/articles/{id}(id=${item.id})}" class="btn btn-primary">보러 가기</a>
                 </div>
             </div>
+            <br>
         </div>
-    </div>
-</div>
 
+    </div>
+    <button type="button" class="btn btn-secondary" onclick="location.href='/logout'">로그아웃</button>
+
+</div>
+<script src="/js/article.js"></script>
 <!-- 필요하면 아래 스크립트도 추가 (부트스트랩 JS용) -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
