@@ -25,10 +25,16 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     runtimeOnly 'com.h2database:h2'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    
+
+    // Spring-Security
     implementation 'org.springframework.boot:spring-boot-starter-security'  // 스프링 시큐리티
     implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6'  // 타임리프에서 스프링 시큐리티 사용
     testImplementation 'org.springframework.security:spring-security-test'  // 스프링 시큐리티 테스트
+
+    // JWT 라이브러리 (jjwt)
+    implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
+    runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.11.5'
+    runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.11.5' // JSON 처리용
     
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher' //테스트 junit
     testImplementation 'org.assertj:assertj-core:3.24.2'    //테스트 AssertJ
